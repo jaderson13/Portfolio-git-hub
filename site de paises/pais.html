@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h3>Informações sobre países</h3>
+        <a href="#" class="modo_tema">
+            <i class="fa-regular fa-moon"></i>
+            <h4>Modo Escuro</h4>
+        </a>
+    </header>
+
+    <main>
+
+        <button>Voltar</button>
+
+        <article id="pais_pagina">
+
+           <!--- <img src="usa.png">
+
+            <section id="texto">
+
+                <h2>Estados Unidos</h2>
+
+                <section id="descricao">
+                    <article>
+                        <h3>População: 56456 </h3>
+                        <h3>Região: America</h3>
+                        <h3>Capital: Washington</h3>
+                    </article>
+
+                    <article>
+                      <h3>Moeda: Dolar</h3>
+                      <h3>Continente: South africa</h3>
+                      <h3>Área: 4543678</h3>
+                    </article>
+
+                </section>
+
+                <article id="linguagens">Linguagens: english</article>
+
+            </section>
+             -->
+
+        </article>  
+
+    </main>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4dc726c735.js" crossorigin="anonymous"></script>
+
+    <script>
+        onload = () => {
+            //Ler_dados(Carregar_pais);
+        }
+
+        function Carregar_pais() {
+            let parametros = new URLSearchParams(location.search);
+            let index = parametros.get("id");
+
+            document.querySelector("main").innerHTML =
+                `
+              <img src="${vet_paises[index].flags.png}">
+
+            <section id="texto">
+
+                <h2>${vet_paises[index].name.common}</h2>
+
+                <section id="descricao">
+                    <article>
+                        <h3>População: ${vet_paises[index].population} </h3>
+                        <h3>Região: ${vet_paises[index].region}</h3>
+                        <h3>Capital: ${vet_paises[index].capital}</h3>
+                        <h3>Moeda: Dolar</h3>
+                    </article>
+
+                    <article>
+                      <h3>Linguagens: ${vet_paises[index].capital}</h3>
+                      <h3>Continente: South africa</h3>
+                      <h3>Área: 4543678</h3>
+                    </article>
+
+                </section>
+
+                <article id="topicos"></article>
+
+            </section>
+            `;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
