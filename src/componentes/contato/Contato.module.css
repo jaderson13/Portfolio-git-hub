@@ -1,0 +1,35 @@
+.contato div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background: none;
+    border: none;
+    gap: 15px;
+    padding: 0;
+}
+
+.contato div button,
+.contato div a {
+    background: #151b23;
+    border: solid rgb(57, 62, 70) 1px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    color:white;
+}
+
+.contato div button:active,.contato div a:active{
+    background:#242c38;
+}
+
+.contato h5 {
+    margin: 0;
+}
+
+.contato h3 {
+    margin-bottom: 20px;
+}
+
+.contato a {
+    text-decoration: none;
+}

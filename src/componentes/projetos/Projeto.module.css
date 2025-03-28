@@ -1,0 +1,64 @@
+.projetos div p {
+    font-size: 11px;
+    margin: 7px 0px 9px 0px;
+}
+
+.projetos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.h3 {
+    color: white;
+    grid-column: 1/-1;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(3, calc(33% - 15px));
+  /*grid-template-columns: repeat(2,50%);*/
+  gap:30px;
+}
+
+
+div a h3 {
+    margin-bottom: 7px;
+}
+
+.projetos img {
+    box-shadow: 0px 0px 8px rgb(22, 22, 22);
+    /*border: solid #EEEEEE 1px;*/
+    width: 280px;
+    height: 180px;
+}
+
+@media (max-width:1550px) {
+    .projetos {
+        grid-template-columns: repeat(2, calc(50% - 15px));
+    }
+
+    .projetos img {
+        width: 290px;
+    }
+}
+
+@media (max-width:1000px) {
+    .projetos {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .projetos img {
+        width: 390px;
+    }
+}
+
+@media (max-width:700px) {
+    .projetos img {
+        width: 250px;
+        height: 150px;
+    }
+}
