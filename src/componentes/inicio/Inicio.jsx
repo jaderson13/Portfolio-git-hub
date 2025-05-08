@@ -5,7 +5,7 @@ export default function Inicio() {
     return (<>
         <section className={style.perfil} id="inicio">
             <figure className={style.profile}>
-                <img src="https://placehold.co/250x250" alt="foto de perfil"></img>
+                <img src="./assets/saitama2.png" alt="foto de perfil"></img>
                 <article>
                     <h4>Jáderson Válner</h4>
                     <h6>Desenvolvedor</h6>

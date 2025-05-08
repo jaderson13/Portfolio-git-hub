@@ -3,7 +3,6 @@ import style from "./Projeto.module.css";
 export default function Projeto() {
     return (<>
 
-        
 
         <section className={style.projetos} id="projetos">
 
